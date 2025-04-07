@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Slide 1: Introduction to DOM Manipulation -->
+        <h1>Todo List</h1>
+        <p>Welcome to the Todo List app! This app demonstrates how we can use JavaScript and jQuery to manipulate the DOM (Document Object Model) to dynamically add, remove, and modify elements.</p>
+        
+        <!-- Slide 2: Selecting DOM Elements -->
+        <h2>Adding a New Task</h2>
+        <p>Enter a task in the input field below and click the "Add Task" button to add it to the list. We are selecting the DOM elements using JavaScript and jQuery here.</p>
+        <input type="text" id="task-input" placeholder="Add a new task">
+        <button id="add-task-btn">Add Task</button>
+        
+        <!-- Slide 4: Dynamically Adding Tasks -->
+        <h2>Your Tasks</h2>
+        <p>Here are the tasks you've added. You can click on a task to mark it as completed, or click the "Remove" button to delete a task.</p>
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Slide 5: Including jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
