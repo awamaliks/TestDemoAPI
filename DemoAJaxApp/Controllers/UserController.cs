@@ -42,15 +42,18 @@ namespace DemoAJaxApp.Controllers
         [HttpPut]
         public IActionResult UpdateUser([FromBody] User user)
         {
-            var existingUser = users.FirstOrDefault(u => u.Id == user.Id);
-            if (existingUser != null)
+            if (user != null)
             {
-                // Update the user's details
-                existingUser.Username = user.Username;
-                existingUser.Age = user.Age;
+                var existingUser = users.FirstOrDefault(u => u.Id == user.Id);
+                if (existingUser != null)
+                {
+                    // Update the user's details
+                    existingUser.Username = user.Username;
+                    existingUser.Age = user.Age;
 
-                // Return success
-                return Json(new { success = true, user = existingUser });
+                    // Return success
+                    return Json(new { success = true, user = existingUser });
+                }
             }
             // If user not found, return failure
             return Json(new { success = false });
@@ -60,14 +63,17 @@ namespace DemoAJaxApp.Controllers
         [HttpDelete]
         public IActionResult DeleteUser([FromBody] User user)
         {
-            var existingUser = users.FirstOrDefault(u => u.Id == user.Id);
-            if (existingUser != null)
+            if (user != null)
             {
-                // Remove the user from the list
-                users.Remove(existingUser);
+                var existingUser = users.FirstOrDefault(u => u.Id == user.Id);
+                if (existingUser != null)
+                {
+                    // Remove the user from the list
+                    users.Remove(existingUser);
 
-                // Return success
-                return Json(new { success = true });
+                    // Return success
+                    return Json(new { success = true });
+                }
             }
             // If user not found, return failure
             return Json(new { success = false });
