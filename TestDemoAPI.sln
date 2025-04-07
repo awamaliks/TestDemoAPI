@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAJaxApp", "DemoAJaxApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestFulAPIDemo", "RestFulAPIDemo\RestFulAPIDemo.csproj", "{E244A89D-42E2-422F-82AC-507E0D8D6F8C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomManipulationDemo", "DomManipulationDemo\DomManipulationDemo.csproj", "{476D7D6A-09E9-4D9D-8E30-5AFDCB399E07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E244A89D-42E2-422F-82AC-507E0D8D6F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E244A89D-42E2-422F-82AC-507E0D8D6F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E244A89D-42E2-422F-82AC-507E0D8D6F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476D7D6A-09E9-4D9D-8E30-5AFDCB399E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476D7D6A-09E9-4D9D-8E30-5AFDCB399E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476D7D6A-09E9-4D9D-8E30-5AFDCB399E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476D7D6A-09E9-4D9D-8E30-5AFDCB399E07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
