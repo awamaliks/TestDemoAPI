@@ -43,3 +43,24 @@ $('#removeElementBtn').click(function () {
 $('.button').click(function () {
     alert("jQuery Button Clicked!");
 });
+
+
+
+
+
+
+$(document).ready(function () {
+    // jQuery function to traverse table rows
+    $('#traverseBtn').click(function () {
+        // Select all rows in the table body
+        $('#myTable tbody tr').each(function (index) {
+            // Get each cell in the row
+            var name = $(this).find('td').eq(0).text(); // Get the Name (1st column)
+            var age = $(this).find('td').eq(1).text();  // Get the Age (2nd column)
+            var location = $(this).find('td').eq(2).text();  // Get the Location (3rd column)
+
+            // Log the data to the console
+            console.log(`Row ${index + 1}: ${name}, ${age}, ${location}`);
+        });
+    });
+});
